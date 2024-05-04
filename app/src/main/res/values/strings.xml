@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Table</string>
     <string name="welcome">Welcome</string>
+    <string name="enter_number">  Enter number   </string>
+    <string name="image_view_description">Image of teacher (vector image)</string>
+    <string name="start">START</string>
+    <string name="practice">Practice</string>
+    <string name="learn_table">Learn Table</string>
 </resources>
