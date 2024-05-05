@@ -9,8 +9,12 @@
     android:fontFamily="sans-serif-condensed-medium"
     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+<<<<<<< HEAD
     android:minHeight="?android:attr/listPreferredItemHeightSmall" >
 
 
 </TextView>
 
+=======
+    android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+>>>>>>> origin/master
