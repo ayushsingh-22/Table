@@ -25,7 +25,7 @@ public class welcome extends AppCompatActivity {
         findViewById(R.id.imageView4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(welcome.this, learning_tab.class);
+                Intent intent = new Intent(welcome.this, starting_screen.class);
                 startActivity(intent);
             }
         });

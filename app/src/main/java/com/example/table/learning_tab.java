@@ -62,6 +62,5 @@ public class learning_tab extends AppCompatActivity {
             }
         });
 
-
     }
 }
