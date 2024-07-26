@@ -50,13 +50,15 @@ public class learning_tab extends AppCompatActivity {
                     list_items.clear();
                     int num = Integer.parseInt(input);
 
-                    for (int i = 1; i <= 10; i++) {
+                    for (int i = 1; i <= 10; i++)
+                    {
                         list_items.add(String.valueOf(num) + " x " + i + " = " + (num * i));
                     }
 
                     ArrayAdapter<String> adapter = new ArrayAdapter<>(learning_tab.this, R.layout.custom_list, list_items);
                     list.setAdapter(adapter);
-                } catch (NumberFormatException e) {
+                }
+                catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "Invalid input: Please enter a valid number", Toast.LENGTH_SHORT).show();
                 }
             }

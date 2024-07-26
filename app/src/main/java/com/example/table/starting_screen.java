@@ -31,6 +31,7 @@ public class starting_screen extends AppCompatActivity {
         btn2 = findViewById(R.id.btn2);
 
         try {
+
             btn1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -38,9 +39,11 @@ public class starting_screen extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             Toast.makeText(getApplicationContext(), "Error" + e, Toast.LENGTH_SHORT).show();
         }
+
 
         try {
             btn2.setOnClickListener(new View.OnClickListener() {

@@ -43,7 +43,8 @@ public class practise_tab extends AppCompatActivity {
                 String input = editText.getText().toString().trim();
                 String expected = editText.getText().toString().trim();
 
-                if (input.isEmpty() || expected.isEmpty()) {
+                if (input.isEmpty() || expected.isEmpty())
+                {
                     Toast.makeText(getApplicationContext(), "Enter a number to proceed", Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -55,7 +56,8 @@ public class practise_tab extends AppCompatActivity {
                     int num = Integer.parseInt(input);
                     int expectedResult = Integer.parseInt(expected);
 
-                    for (int i = 1; i <= 10; i++) {
+                    for (int i = 1; i <= 10; i++)
+                    {
                         int result = num * i;
                         list_items.add((num) + " x " + i + " = " + result);
                         expectedResults.add(expectedResult);
@@ -63,7 +65,9 @@ public class practise_tab extends AppCompatActivity {
 
                     ArrayAdapter<String> adapter = new ArrayAdapter<>(practise_tab.this, R.layout.custom_list, list_items);
                     list.setAdapter(adapter);
-                } catch (NumberFormatException e) {
+                }
+
+                catch (NumberFormatException e) {
                     Toast.makeText(getApplicationContext(), "Invalid input: Please enter a valid number", Toast.LENGTH_SHORT).show();
                 }
             }
