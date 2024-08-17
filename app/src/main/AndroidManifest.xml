@@ -14,9 +14,6 @@
         <activity
             android:name=".starting_screen"
             android:exported="false" />
-        <activity
-            android:name=".practise_tab"
-            android:exported="false" />
 
         <activity
             android:name=".welcome"

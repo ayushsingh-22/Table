@@ -22,12 +22,9 @@ public class welcome extends AppCompatActivity {
             return insets;
         });
 
-        findViewById(R.id.imageView4).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(welcome.this, starting_screen.class);
-                startActivity(intent);
-            }
+        findViewById(R.id.imageView4).setOnClickListener(v -> {
+            Intent intent = new Intent(welcome.this, learning_tab.class);
+            startActivity(intent);
         });
     }
 }
